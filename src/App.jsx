@@ -8,76 +8,92 @@ function App() {
     <>
       <div className='snap snap-y snap-mandatory h-screen overflow-y-scroll'>
         
-        <div className="grid grid-cols-4 grid-rows-3 gap-12 p-12 snap-start h-screen bg-gradient-to-t from-gray-300 to-gray-500">
+        <div className="grid grid-cols-4 grid-rows-3 gap-12 p-12 snap-start h-screen bg-gradient-to-t from-gray-700 to-gray-900">
           <motion.div className="flex text-[120px] bg-gradient-to-r from-pink-500 to-indigo-800 text-transparent bg-clip-text justify-center items-center"
             initial={{ x: -200 }}
             animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}
+            transition={{ type: 'tween', duration: 4.5 }}
             >
             Seite 1
           </motion.div>
           <motion.div className="col-span-2 rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
             initial={{ x: -200 }}
             animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}            
+            transition={{ type: 'tween', duration: 3.5 }}            
           >
-             <div className="h-full w-full bg-gray-400 rounded-3xl"></div>
+             <div className="text-white text-3xl text-center h-full w-full bg-gray-800 rounded-3xl">
+              DIV 1
+             </div>
           </motion.div>
 
           <motion.div className="row-span-2 rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
-            initial={{ x: -200 }}
-            animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}            
+            initial={{ y: -200 }}
+            animate={{ y: 0 }}
+            transition={{ type: 'tween', duration: 2.5 }}            
           >
-             <div className="h-full w-full bg-gray-400 rounded-3xl"></div>
+             <div className="text-white text-3xl text-center h-full w-full bg-gray-800 rounded-3xl">
+              DIV 2
+             </div>
           </motion.div>
 
           <motion.div className="col-span-2 rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
             initial={{ x: -200 }}
             animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}            
+            transition={{ type: 'tween', duration: 2.0 }}            
           >
-             <div className="h-full w-full bg-gray-400 rounded-3xl"></div>
+             <div className="text-white text-3xl h-full w-full bg-gray-800 rounded-3xl text-center">
+              DIV 3
+             </div>
+          </motion.div>
+
+          <motion.div className="rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
+            initial={{ y: 200 }}
+            animate={{ y: 0 }}
+            transition={{ type: 'tween', duration: 1.0 }}            
+          >
+             <div className="text-white text-3xl text-center h-full w-full bg-gray-800 rounded-3xl">
+              DIV 4
+             </div>
           </motion.div>
 
           <motion.div className="rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
             initial={{ x: -200 }}
             animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}            
+            transition={{ type: 'tween', duration: 1.5 }}            
           >
-             <div className="h-full w-full bg-gray-400 rounded-3xl"></div>
+             <div className="text-white text-3xl text-center h-full w-full bg-gray-800 rounded-3xl">
+              DIV 5
+             </div>
           </motion.div>
 
           <motion.div className="rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
-            initial={{ x: -200 }}
-            animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}            
+            initial={{ y: 200 }}
+            animate={{ y: 0 }}
+            transition={{ type: 'tween', duration: 2.0 }}            
           >
-             <div className="h-full w-full bg-gray-400 rounded-3xl"></div>
+             <div className="text-white text-3xl text-center h-full w-full bg-gray-800 rounded-3xl">
+              DIV 6
+             </div>
           </motion.div>
 
           <motion.div className="rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
-            initial={{ x: -200 }}
-            animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}            
+            initial={{ y: 200 }}
+            animate={{ y: 0 }}
+            transition={{ type: 'tween', duration: 1.5 }}            
           >
-             <div className="h-full w-full bg-gray-400 rounded-3xl"></div>
+             <div className="text-white text-3xl text-center h-full w-full bg-gray-800 rounded-3xl">
+              DIV 7
+             </div>
           </motion.div>
 
           <motion.div className="rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
-            initial={{ x: -200 }}
+            initial={{ x: 200 }}
             animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}            
+            transition={{ type: 'tween', duration: 1.5 }}            
           >
-             <div className="h-full w-full bg-gray-400 rounded-3xl"></div>
-          </motion.div>
-
-          <motion.div className="rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1"
-            initial={{ x: -200 }}
-            animate={{ x: 0 }}
-            transition={{ type: 'tween', duration: 0.5 }}            
-          >
-             <div className="h-full w-full bg-gray-400 rounded-3xl"></div>
+             <div className="text-white text-3xl text-center h-full w-full bg-gray-800 rounded-3xl">
+              DIV 8
+             </div>
           </motion.div>
 
         </div>  
