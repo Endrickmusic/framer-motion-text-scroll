@@ -5,10 +5,13 @@ import "./index.css";
 function App() {
   return (
     <>
-      <div className="snap snap-y snap-mandatory h-screen overflow-y-scroll">
+      <div className="relative snap snap-y snap-mandatory h-screen overflow-y-scroll">
+        <div className="fixed ml-[350px] mt-20 bg-blue-500 h-80 w-80 z-10"></div>
+
         <div
           className="
-          grid grid-cols-2 grid-rows-4 gap-12 p-8 snap-start h-screen bg-gradient-to-t from-gray-700 to-gray-900
+          grid grid-cols-2 grid-rows-4 gap-12 p-8 snap-start h-screen 
+          bg-gradient-to-t from-gray-300 to-gray-500
           sm:grid-cols-3 sm:p-10
           md:grid-cols-4 md:p-12
           lg:grid-cols-5 lg:pt-24 lg:pb-24
@@ -16,10 +19,10 @@ function App() {
         >
           <motion.div
             className="
-            text-8xl col-span-2 col-start-1 row-start-1 bg-gradient-to-r from-pink-500 to-indigo-800 text-transparent 
-            sm:text-5xl sm:col-start-1 sm:col-end-4
-            md:text-5xl md:col-start-2 md:col-span-2 md:col-end-5 
-            lg:col-start-3 lg:col-span-2 lg:text-9xl lg:col-end-5"
+            z-20 text-8xl col-span-2 col-start-1 row-start-1 bg-gradient-to-r from-pink-500 to-indigo-800 text-transparent bg-clip-text
+            sm:text-8xl sm:col-start-1 sm:col-end-4
+            md:text-8xl md:col-start-2 md:col-span-2 md:col-end-5 
+            lg:text-8xl lg:col-start-3 lg:col-span-2 lg:col-end-5"
             initial={{ x: -200 }}
             animate={{ x: 0 }}
             transition={{ type: "tween", duration: 2.5 }}
@@ -29,7 +32,7 @@ function App() {
 
           <motion.div
             className="
-            col-span-1 row-start-2 row-end-2 col-start-1 rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1
+            z-20 col-span-1 row-start-2 row-end-2 col-start-1 rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1
             sm:row-span-3 sm:col-start-3 
             md:row-span-3 md:col-end-5 md:col-start-4
             lg:col-end-5 lg:col-span-1 lg:row-span-3
@@ -45,7 +48,7 @@ function App() {
 
           <motion.div
             className="
-            col-span-1 row-start-2 row-end-2 col-start-2 rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1
+            z-20 col-span-1 row-start-2 row-end-2 col-start-2 rounded-3xl bg-gradient-to-r from-pink-500 to-indigo-800 p-1
             sm:row-span-1 sm:col-start-1 sm:row-start-2 sm:col-span-2 
             md:row-span-1 md:col-start-1 md:row-start-1 md:col-span-1
             lg:col-start-2 lg:row-start-1 lg:row-span-1 lg:col-span-1
@@ -60,7 +63,8 @@ function App() {
           </motion.div>
 
           <motion.div
-            className="text-white text-xl col-span-2 col-start-1 row-start-3 text-justify
+            className="
+            z-20 text-white text-xl col-span-2 col-start-1 row-start-3 text-justify
             sm:text-xl 
             md:text-3xl md:col-span-3 md:row-start-2
             lg:text-3xl lg:col-span-2 lg:col-start-2 lg:row-start-2
