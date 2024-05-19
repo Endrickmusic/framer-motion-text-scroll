@@ -23,9 +23,9 @@ function App() {
             sm:text-8xl sm:col-start-1 sm:col-end-4
             md:text-8xl md:col-start-2 md:col-span-2 md:col-end-5 
             lg:text-8xl lg:col-start-3 lg:col-span-2 lg:col-end-5"
-            initial={{ x: -200 }}
-            animate={{ x: 0 }}
-            transition={{ type: "tween", duration: 2.5 }}
+            initial={{ y: -200 }}
+            animate={{ y: 0 }}
+            transition={{ type: "tween", duration: 1.2 }}
           >
             Seite 1
           </motion.div>
@@ -37,7 +37,7 @@ function App() {
             md:row-span-3 md:col-end-5 md:col-start-4
             lg:col-end-5 lg:col-span-1 lg:row-span-3
             "
-            initial={{ x: -200 }}
+            initial={{ x: 400 }}
             animate={{ x: 0 }}
             transition={{ type: "tween", duration: 1.5 }}
           >
