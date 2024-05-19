@@ -1,12 +1,24 @@
-import { motion } from "framer-motion";
+import { useRef, useEffect } from "react"
+import { motion, useTransform, useScroll } from "framer-motion"
 
-import "./index.css";
+import "./index.css"
 
 function App() {
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll(ref)
+  const y = useTransform(scrollYProgress, [0, 1], [0, 2000])
+
+  useEffect(() => {
+    console.log(y)
+  }, [y])
+
   return (
     <>
-      <div className="relative snap snap-y snap-mandatory h-screen overflow-y-scroll">
-        <div className="fixed ml-[350px] mt-20 bg-blue-500 h-80 w-80 z-10"></div>
+      <div className="relative snap snap-y snap-mandatory h-screen" ref={ref}>
+        <motion.div
+          className="absolute ml-[350px] mt-60 bg-blue-500 h-80 w-80 z-10"
+          style={{ y }}
+        ></motion.div>
 
         <div
           className="
@@ -16,6 +28,7 @@ function App() {
           md:grid-cols-4 md:p-12
           lg:grid-cols-5 lg:pt-24 lg:pb-24
         "
+          // ref={ref}
         >
           <motion.div
             className="
@@ -98,7 +111,7 @@ function App() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
